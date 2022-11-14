@@ -1,15 +1,49 @@
-# تمارين اليوم الثاني
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args)
+    {
+        Scanner number = new Scanner(System.in);
+        int value=number.nextInt();
+        if(value>0) {
+            System.out.println("+");
+        } else if (value<0) {
+            System.out.println("-");
+        }
+        else if (value==0){
+            System.out.println("0");
+        }
+        else {
+            System.out.println("not avalible");//
+        }
+
+        Scanner value1=new Scanner(System.in);
+        System.out.println("Enter the text value");
+        String textvalue =value1.next();
+        System.out.println("Enter the specified letter");
+        String textvalue_ =value1.next();
+        System.out.println("Is the sentence"+textvalue+"contain phrase"+textvalue+" "+textvalue_.contains(textvalue_));
+
+        Scanner value2=new Scanner(System.in);
+        System.out.println("Enter the text value");
+        String textvalue1 =value2.next();
+        System.out.println("Enter the specified letter");
+        int number1= value2.nextInt();
+        System.out.println(" The character is="+number1+textvalue1.charAt(number1));
+
+        Scanner number_=new Scanner(System.in);
+        System.out.println("Enter the bigest number");
+        int number2= number_.nextInt();
+        System.out.println("Enter the middle number");
+        int number3= number_.nextInt();
+        System.out.println("Enter the smallest number");
+        int number4= number_.nextInt();
+        if (number2>number3&&number2>number4){
+            System.out.println(number2+"Enter the bigger than number");
+        }
+        else {
+            System.out.println("Enter the smallest number");
+        }
 
 
-## التمرين الاول
-- قم بكتابة برنامج يقوم بأخد قيمة عددية من المستخدم ، ثم طباعة ما اذا كانت القيمة موجبة او سالبة او تساوي 0.
-
-## التمرين الثاني
--  قم بكتابة برنامج يقوم بأخذ قيمة نصية ورقم من المستخدم، ثم طباعة الحرف الموجود في ال index المعطى.
-
-## التمرين الثالث 
-- قم بكتابة برنامج يقوم بأخذ قيمة نصية من المستخدم و حرف ، ثم طباعة ما اذا كان النص يحتوي على الحرف المدخل.  
-
-## التمرين الرابع (Bonus) 
-- قم بكتابة برنامج يقوم بأخذ ثلاث ارقام من المستخدم ، ثم طباعة اكبر عدد.
-
+    }
+}
